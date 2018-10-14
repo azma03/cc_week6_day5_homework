@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurant List</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Restaurant List</h1>
+  </header>
+  <form id="new-item-form">
+    <fieldset>
+      <legend>Add a New Restaurant</legend>
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="name" class="primary">Name:</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="address" class="primary">Address:</label>
+          <input type="text" id="address" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="cuisine" class="primary">Cuisine:</label>
+          <select id="cuisine">
+            <option value="" disabled selected></option>
+            <option value="Chinese">Chinese</option>
+            <option value="Italian">Italian</option>
+            <option value="Lebenese">Lebenese</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Tapas">Tapas</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="rating" class="primary">Average Customer Rating:</label>
+          <input type="radio" name="rating" value="Excellent" /><label for="ratingExcellent">Excellent</label>
+          <input type="radio" name="rating" value="Good" /><label for="ratingGood">Good</label>
+          <input type="radio" name="rating" value="Average" /><label for="ratingAverage">Average</label>
+          <input type="radio" name="rating" value="Below Average" /><label for="ratingBelowAverage">Below Average</label>
+      </div>
+
+      <input type="submit" value="Save" id="submit-btn" class="button"/>
+    </fieldset>
+  </form>
+  <h1>My Restaurant List</h1>
+  <input type="button" value="Delete All" id="deleteAll-btn" class="button">
+  <div id="restaurant-list"></div>
+</body>
+</html>

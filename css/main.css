@@ -1,0 +1,52 @@
+body {
+  font-family: Palatinot;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: #E6E6EA;
+}
+
+h1{
+  font-size: 24px;
+}
+
+
+.restaurant-item {
+  background-color: #2AB7CA;
+  border: 3px solid #E6E6EA;
+  border-radius: 10px;
+  margin: 20px;
+  width: 300px;
+  padding-left: 20px;
+  align-content: center;
+}
+
+#restaurant-list {
+  display: flex;
+  padding-left: 0;
+  justify-content: flex-start;
+}
+
+.button {
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 0;
+  font-size: 14px;
+}
+
+.button:hover,
+.button:focus {
+  color: #999;
+}
+
+.button:active {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
